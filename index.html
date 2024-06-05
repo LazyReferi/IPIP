@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучаем JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen" class="overlay">
+        <div class="overlay-content">
+            <h1 id="welcome-message"></h1>
+            <h2 id="current-date"></h2>
+        </div>
+    </div>
+
+    <header>
+        <h1>Изучаем JavaScript</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button onclick="showDateAndName()">Показать дату и имя</button></li>
+            <li><button onclick="showTask('task1')">Задача 1</button></li>
+            <li><button onclick="showTask('task2')">Задача 2</button></li>
+            <li><button onclick="startQuiz()">Тест</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="info">
+            <h2>Общие сведения о JavaScript</h2>
+            <p>JavaScript — это язык программирования, который используется для создания интерактивных и динамичных веб-страниц. Он позволяет делать веб-страницы более живыми и функциональными.</p>
+            <p>JavaScript нужен для:</p>
+            <ul>
+                <li>Динамического изменения контента</li>
+                <li>Валидации форм</li>
+                <li>Создания интерактивных элементов (например, слайдеров, модальных окон)</li>
+                <li>Работы с сервером (например, через AJAX)</li>
+            </ul>
+            <p>Однако JavaScript не подходит для:</p>
+            <ul>
+                <li>Серверной части крупных проектов (здесь лучше использовать специализированные языки, например, Node.js)</li>
+                <li>Работы с большими данными (для этого лучше использовать языки, такие как Python или R)</li>
+            </ul>
+        </section>
+
+        <section id="tasks" class="hidden">
+            <div id="task1" class="task hidden">
+                <h3>Задача 1</h3>
+                <p>Вывод четных чисел от 8 до 20.</p>
+                <button onclick="printEvenNumbers()">Выполнить задачу 1</button>
+                <pre id="output"></pre>
+            </div>
+            <div id="task2" class="task hidden">
+                <h3>Задача 2</h3>
+                <p>Вывод текущей даты в формате: день месяц год.</p>
+                <button onclick="displayFormattedDate()">Выполнить задачу 2</button>
+                <pre id="output2"></pre>
+            </div>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <h3>Тест по JavaScript</h3>
+            <form id="quiz-form">
+                <!-- Здесь будут вопросы -->
+            </form>
+            <button type="button" onclick="submitQuiz()">Отправить</button>
+            <div id="quiz-result"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
