@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №2</title>
+    <script>
+        function displayDate() {
+            let today = new Date();
+            let output = document.getElementById('output');
+            output.innerHTML = 'Сегодняшняя дата: ' + today.toDateString();
+        }
+    </script>
+</head>
+<body onload="displayDate()">
+    <div id="output"></div>
+</body>
+</html>

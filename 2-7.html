@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №2</title>
+    <script>
+        function addElementToFront() {
+            let array = [4, 5, 6];
+            let output = document.getElementById('output');
+            output.innerHTML = 'Массив до добавления элемента в начало: ' + array;
+            array.unshift(0);
+            let output1 = document.getElementById('output1');
+            output1.innerHTML = 'Массив после добавления элемента в начало: ' + array;
+        }
+    </script>
+</head>
+<body onload="addElementToFront()">
+    <div id="output"></div>
+    <div id="output1"></div>
+</body>
+</html>

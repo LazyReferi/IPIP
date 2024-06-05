@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №1</title>
+    <script>
+        function checkVariable() {
+            let myVariable = 42; // Пример переменной
+            let output = document.getElementById('output');
+            if (typeof myVariable === 'number') {
+                output.innerHTML = 'Переменная является числом';
+            } else {
+                output.innerHTML = 'Переменная не является числом';
+            }
+        }
+    </script>
+</head>
+<body onload="checkVariable()">
+    <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №2</title>
+    <script>
+        function printArrayElements() {
+            let array = [1, 2, 3, 4, 5];
+            let output = document.getElementById('output');
+            for (let i = 0; i < array.length; i++) {
+                output.innerHTML += array[i] + ' ';
+            }
+        }
+    </script>
+</head>
+<body onload="printArrayElements()">
+    <div id="output"></div>
+</body>
+</html>

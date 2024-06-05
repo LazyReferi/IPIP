@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №2</title>
+    <script>
+        function modifyArray() {
+            let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            let output = document.getElementById('output');
+            output.innerHTML = '5-й элемент: ' + array[4];
+            array[4] = 99;
+            output.innerHTML += '<br>Измененный 5-й элемент: ' + array[4];
+        }
+    </script>
+</head>
+<body onload="modifyArray()">
+    <div id="output"></div>
+</body>
+</html>

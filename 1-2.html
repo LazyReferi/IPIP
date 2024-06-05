@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №1</title>
+    <script>
+        function printNumbers() {
+            let output = document.getElementById('output');
+
+            // for loop
+            let forOutput = 'For loop: ';
+            for (let i = 1; i <= 40; i++) {
+                forOutput += i + ' ';
+            }
+            output.innerHTML += forOutput + '<br>';
+
+            // while loop
+            let whileOutput = 'While loop: ';
+            let j = 1;
+            while (j <= 40) {
+                whileOutput += j + ' ';
+                j++;
+            }
+            output.innerHTML += whileOutput + '<br>';
+
+            // do-while loop
+            let doWhileOutput = 'Do-While loop: ';
+            let k = 1;
+            do {
+                doWhileOutput += k + ' ';
+                k++;
+            } while (k <= 40);
+            output.innerHTML += doWhileOutput + '<br>';
+        }
+    </script>
+</head>
+<body onload="printNumbers()">
+    <div id="output"></div>
+</body>
+</html>

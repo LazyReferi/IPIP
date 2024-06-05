@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №1</title>
+    <script>
+        function askNumber() {
+            let number;
+            do {
+                number = prompt("Введите число больше 5:");
+                if (number === null) return; // если нажата "отмена"
+                number = Number(number);
+            } while (isNaN(number) || number <= 5);
+
+            alert("Поздравляем!");
+        }
+    </script>
+</head>
+<body onload="askNumber()">
+</body>
+</html>

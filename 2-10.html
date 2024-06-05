@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №2</title>
+    <script>
+        function multiplyRandomNumbers() {
+            let num1 = Math.floor(Math.random() * 51);
+            let num2 = Math.floor(Math.random() * 51);
+            let product = num1 * num2;
+            let output = document.getElementById('output');
+            output.innerHTML = `Произведение ${num1} и ${num2} равно ${product}`;
+        }
+    </script>
+</head>
+<body onload="multiplyRandomNumbers()">
+    <div id="output"></div>
+</body>
+</html>

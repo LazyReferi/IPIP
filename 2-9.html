@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №2</title>
+    <script>
+        function displayFormattedDate() {
+            let today = new Date();
+            let options = { year: 'numeric', month: 'long', day: 'numeric' };
+            let formattedDate = today.toLocaleDateString('ru-RU', options);
+            let output = document.getElementById('output');
+            output.innerHTML = 'Сегодняшняя дата: ' + formattedDate;
+        }
+    </script>
+</head>
+<body onload="displayFormattedDate()">
+    <div id="output"></div>
+</body>
+</html>

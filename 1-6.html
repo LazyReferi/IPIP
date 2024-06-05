@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №1</title>
+    <script>
+        function printOddNumbers() {
+            let output = document.getElementById('output');
+            let oddNumbers = 'Нечетные числа от 1 до 7 (пропуская 5): ';
+            for (let i = 1; i <= 7; i += 2) {
+                if (i === 5) continue;
+                oddNumbers += i + ' ';
+            }
+            output.innerHTML = oddNumbers;
+        }
+    </script>
+</head>
+<body onload="printOddNumbers()">
+    <div id="output"></div>
+</body>
+</html>
